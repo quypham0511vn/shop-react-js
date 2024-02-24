@@ -12,16 +12,16 @@ const Footer = () => {
     <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded mt-10 max-md:px-0">
       <nav className="grid grid-flow-col max-sm:grid-flow-row gap-4">
         <Link to="/" className="link link-hover text-2xl max-md:text-xl text-accent-content" onClick={() => window.scrollTo(0, 0)}>
-          Home
+          Trang chủ
         </Link>
         <Link to="/shop" className="link link-hover text-2xl max-md:text-xl text-accent-content" onClick={() => window.scrollTo(0, 0)}>
-          Shop
+          Cửa hàng
         </Link>
         <Link to="/about" className="link link-hover text-2xl max-md:text-xl text-accent-content" onClick={() => window.scrollTo(0, 0)}>
-          About us
+          Về chúng tôi
         </Link>
         <Link to="/contact" className="link link-hover text-2xl max-md:text-xl text-accent-content" onClick={() => window.scrollTo(0, 0)}>
-          Contact
+          Liên hệ
         </Link>
         {!loginState && (
           <>
@@ -30,14 +30,14 @@ const Footer = () => {
               className="link link-hover text-2xl max-md:text-xl text-accent-content"
               onClick={() => window.scrollTo(0, 0)}
             >
-              Login
+              Đăng nhập
             </Link>
             <Link
               to="/register"
               className="link link-hover text-2xl max-md:text-xl text-accent-content"
               onClick={() => window.scrollTo(0, 0)}
             >
-              Register
+              Đăng kí
             </Link>
           </>
         )}
@@ -52,7 +52,7 @@ const Footer = () => {
       </nav>
       <aside>
         <p className="text-2xl max-sm:text-sm text-accent-content">
-          Copyright © 2023 - All right reserved by Tinh dầu Sao Hương
+          Bản quyền © 2023 - Tất cả các quyền thuộc về Tinh dầu Hương Sao
         </p>
       </aside>
     </footer>

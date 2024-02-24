@@ -12,7 +12,7 @@ const Cart = () => {
 
   const isCartEmpty = () => {
     if(cartItems.length === 0){
-      toast.error("Your cart is empty");
+      toast.error("Giỏ hàng rỗng");
     }else{
       navigate("/thank-you");
     }
@@ -20,7 +20,7 @@ const Cart = () => {
 
   return (
     <>
-    <SectionTitle title="Cart" path="Home | Cart" />
+    <SectionTitle title="Giỏ hàng" path="Trang chủ | Giỏ hàng" />
     <div className='mt-8 grid gap-8 lg:grid-cols-12 max-w-7xl mx-auto px-10'>
         <div className='lg:col-span-8'>
           <CartItemsList />
@@ -29,11 +29,11 @@ const Cart = () => {
           <CartTotals />
           {loginState ? (
             <button onClick={isCartEmpty} className='btn bg-blue-600 hover:bg-blue-500 text-white btn-block mt-8'>
-              order now
+              Mua ngay
             </button>
           ) : (
             <Link to='/login' className='btn bg-blue-600 hover:bg-blue-500 btn-block text-white mt-8'>
-              please login
+              Vui lòng đăng nhập
             </Link>
           )}
         </div>

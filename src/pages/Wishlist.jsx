@@ -8,16 +8,16 @@ const Wishlist = () => {
     const dispatch = useDispatch();
   return (
     <>
-      <SectionTitle title="Wishlist" path="Home | Wishlist" />
+      <SectionTitle title="Danh sách giỏ hàng" path="Trang chủ | Danh sách giỏ hàng" />
       <div className="max-w-7xl mx-auto">
         <div className="overflow-x-auto">
           <table className="table">
             <thead>
               <tr>
                 <th></th>
-                <th className="text-accent-content">Name</th>
-                <th className="text-accent-content">Size</th>
-                <th className="text-accent-content">Action</th>
+                <th className="text-accent-content">Tên</th>
+                <th className="text-accent-content">Kich cỡ</th>
+                <th className="text-accent-content">Thao tác</th>
               </tr>
             </thead>
             <tbody>

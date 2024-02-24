@@ -36,18 +36,18 @@ const OrderHistory = () => {
 
   return (
     <>
-      <SectionTitle title="Order History" path="Home | Order History" />
+      <SectionTitle title="Lịch sử mua hàng" path="Trang chủ | Lịch sử mua hàng" />
       <div className="order-history-main max-w-7xl mx-auto mt-10 px-20 max-md:px-10">
         {orders?.length === 0 ? (
           <div className="text-center">
             <h1 className="text-4xl text-accent-content">
-              There are no orders in the order history
+              Không có lịch sử mua hàng
             </h1>
             <Link
               to="/shop"
               className="btn bg-blue-600 hover:bg-blue-500 text-white mt-10"
             >
-              Make your first order
+              Tạo giao dịch
             </Link>
           </div>
         ) : (
@@ -68,11 +68,11 @@ const OrderHistory = () => {
                       <thead>
                         <tr className="text-accent-content">
                           <th>Order</th>
-                          <th>Image</th>
-                          <th>Name</th>
-                          <th>Size</th>
-                          <th>Amount</th>
-                          <th>Price</th>
+                          <th>Ảnh</th>
+                          <th>Tên</th>
+                          <th>Kích cỡ</th>
+                          <th>Số lượng</th>
+                          <th>Giá</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -89,28 +89,28 @@ const OrderHistory = () => {
                         <tr>
                           <td colSpan="5" className="text-center">
                             <h4 className="text-md text-accent-content">
-                              Subtotal: ${ Math.round(order?.subtotal) }
+                              Tổng: ${ Math.round(order?.subtotal) }
                             </h4>
                           </td>
                         </tr>
                         <tr>
                           <td colSpan="5" className="text-center">
                             <h3 className="text-md text-accent-content">
-                              Shipping: $50
+                              Tiền vận chuyển: $50
                             </h3>
                           </td>
                         </tr>
                         <tr>
                           <td colSpan="5" className="text-center">
                             <h3 className="text-md text-accent-content">
-                              Tax: 20%: ${ Math.round(order?.subtotal / 5) }
+                              Thuế: 20%: ${ Math.round(order?.subtotal / 5) }
                             </h3>
                           </td>
                         </tr>
                         <tr>
                           <td colSpan="5" className="text-center">
                             <h3 className="text-xl text-accent-content">
-                              - Order Total: ${ Math.round(order?.subtotal + 50 + (order?.subtotal / 5)) } -
+                              - Tất cả: ${ Math.round(order?.subtotal + 50 + (order?.subtotal / 5)) } -
                             </h3>
                           </td>
                         </tr>

@@ -32,7 +32,7 @@ const Pagination = () => {
         >
           <FaCircleArrowLeft />
         </button>
-        <button className="join-item btn text-2xl">Page {productsLoaderData.page}</button>
+        <button className="join-item btn text-2xl">Trang {productsLoaderData.page}</button>
         <button
           className="join-item btn text-4xl flex justify-center"
           onClick={() => {

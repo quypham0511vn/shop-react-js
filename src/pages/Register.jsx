@@ -42,7 +42,7 @@ const Register = () => {
       errorMessage = "Please enter a confirm password longer than 5 characters";
     } else if (password !== confirmPassword) {
       isProceed = false;
-      errorMessage = "Passwords must match";
+      errorMessage = "Mật khẩu không trùng";
     }
 
     if (!isProceed) {
@@ -73,23 +73,23 @@ const Register = () => {
         body: JSON.stringify(regObj),
       })
         .then((res) => {
-          toast.success("Registration Successful");
+          toast.success("Hoàn tất đăng kí");
           navigate("/login");
         })
         .catch((err) => {
-          toast.error("Failed: " + err.message);
+          toast.error("Lỗi: " + err.message);
         });
     }
   };
   return (
     <>
-      <SectionTitle title="Register" path="Home | Register" />
+      <SectionTitle title="Đăng kí" path="Trang chủ | Đăng kí" />
       <div className="flex flex-col justify-center sm:py-12">
         <div className="p-10 xs:p-0 mx-auto md:w-full md:max-w-md">
           <div className="bg-dark border border-gray-600 shadow w-full rounded-lg divide-y divide-gray-200">
             <form className="px-5 py-7" onSubmit={handleSubmit}>
               <label className="font-semibold text-sm pb-1 block text-accent-content">
-                Name
+                Tên
               </label>
               <input
                 type="text"
@@ -99,7 +99,7 @@ const Register = () => {
                 required={true}
               />
               <label className="font-semibold text-sm pb-1 block text-accent-content">
-                Lastname
+                Họ
               </label>
               <input
                 type="text"
@@ -119,7 +119,7 @@ const Register = () => {
                 required={true}
               />
               <label className="font-semibold text-sm pb-1 block text-accent-content">
-                Phone
+                Số điện thoại
               </label>
               <input
                 type="tel"
@@ -129,7 +129,7 @@ const Register = () => {
                 required={true}
               />
               <label className="font-semibold text-sm pb-1 block text-accent-content">
-                Adress
+                Địa chỉ
               </label>
               <input
                 type="text"
@@ -139,7 +139,7 @@ const Register = () => {
                 required={true}
               />
               <label className="font-semibold text-sm pb-1 block text-accent-content">
-                Password
+                Mật khẩu
               </label>
               <input
                 type="password"
@@ -149,7 +149,7 @@ const Register = () => {
                 required={true}
               />
               <label className="font-semibold text-sm pb-1 block text-accent-content">
-                Repeat Password
+                Xác thực mật khẩu
               </label>
               <input
                 type="password"
@@ -162,7 +162,7 @@ const Register = () => {
                 type="submit"
                 className="transition duration-200 bg-blue-600 hover:bg-blue-500 focus:bg-blue-700 focus:shadow-sm focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 text-white w-full py-2.5 rounded-lg text-sm shadow-sm hover:shadow-md font-semibold text-center inline-block"
               >
-                <span className="inline-block mr-2">Register</span>
+                <span className="inline-block mr-2">Đăng kí</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -186,7 +186,7 @@ const Register = () => {
               className="btn btn-neutral text-white"
               onClick={() => window.scrollTo(0, 0)}
             >
-              Already have an account? Please login.
+              Đã có tài khoản? Vui lòng đăng nhập.
             </Link>
           </div>
         </div>

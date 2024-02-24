@@ -56,7 +56,7 @@ const Header = () => {
             className="btn btn-ghost normal-case text-2xl font-black text-accent-content"
           >
             <AiFillShopping />
-            Tinh dầu Sao Hương
+            Tinh dầu Hương Sao
           </Link>
         </div>
         <div className="flex-none">
@@ -110,17 +110,17 @@ const Header = () => {
             >
               <div className="card-body">
                 <span className="font-bold text-lg text-accent-content">
-                  {amount} Items
+                  {amount} Mục
                 </span>
                 <span className="text-info text-accent-content">
-                  Subtotal: ${total.toFixed(2)}
+                  Tổng: ${total.toFixed(2)}
                 </span>
                 <div className="card-actions">
                   <Link
                     to="/cart"
                     className="btn bg-blue-600 btn-block text-white hover:bg-blue-500 text-base-content"
                   >
-                    View cart
+                    Xem giỏ hàng
                   </Link>
                 </div>
               </div>
@@ -142,17 +142,17 @@ const Header = () => {
                     to="/user-profile"
                     className="justify-between text-accent-content"
                   >
-                    Profile
+                    Thông tin cá nhân
                   </Link>
                 </li>
                 <li>
                   <Link to="/order-history" className="text-accent-content">
-                    Order history
+                    Lịch sử giỏ hàng
                   </Link>
                 </li>
                 <li>
                   <Link to="/login" className="text-accent-content">
-                    Logout
+                    Đăng xuất
                   </Link>
                 </li>
               </ul>
@@ -185,34 +185,34 @@ const Header = () => {
               {/* Sidebar content here */}
               <li className="text-xl">
                 <NavLink className="text-accent-content" to="/">
-                  Home
+                  Trang chủ
                 </NavLink>
               </li>
               <li className="text-xl">
                 <NavLink className="text-accent-content" to="/shop">
-                  Shop
+                  Cửa hàng
                 </NavLink>
               </li>
               <li className="text-xl">
                 <NavLink className="text-accent-content" to="/about-us">
-                  About us
+                  Về chúng tôi
                 </NavLink>
               </li>
               <li className="text-xl">
                 <NavLink className="text-accent-content" to="/contact">
-                  Contact
+                  Liên hệ
                 </NavLink>
               </li>
               {!isLoggedIn && (
                 <>
                   <li className="text-xl">
                     <NavLink className="text-accent-content" to="/login">
-                      Login
+                      Đăng nhập
                     </NavLink>
                   </li>
                   <li className="text-xl">
                     <NavLink className="text-accent-content" to="/register">
-                      Register
+                      Đăng kí
                     </NavLink>
                   </li>
                 </>
@@ -223,24 +223,24 @@ const Header = () => {
 
         <div className="container text-2xl navlinks-container">
           <NavLink className="text-accent-content" to="/">
-            Home
+            Trang chủ
           </NavLink>
           <NavLink className="text-accent-content" to="/shop">
-            Shop
+            Cửa hàng
           </NavLink>
           <NavLink className="text-accent-content" to="/about-us">
-            About us
+            Về chúng tôi
           </NavLink>
           <NavLink className="text-accent-content" to="/contact">
-            Contact
+            Liên hệ
           </NavLink>
           {!isLoggedIn && (
             <>
               <NavLink className="text-accent-content" to="/login">
-                Login
+                Đăng nhập
               </NavLink>
               <NavLink className="text-accent-content" to="/register">
-                Register
+                Đăng kí
               </NavLink>
             </>
           )}

@@ -5,7 +5,7 @@ import { SectionTitle } from "../components";
 const Contact = () => {
   return (
     <>
-      <SectionTitle title="Contact Us" path="Home | Contact" />
+      <SectionTitle title="Liên lạc chúng tôi" path="Trang chủ | Liên hệ" />
       <div className="isolate px-6 lg:px-8">
         <Form
           action="#"
@@ -18,7 +18,7 @@ const Contact = () => {
                 htmlFor="first-name"
                 className="block text-sm font-semibold leading-6 text-accent-content"
               >
-                First name
+                Tên
               </label>
               <div className="mt-2.5">
                 <input
@@ -35,7 +35,7 @@ const Contact = () => {
                 htmlFor="last-name"
                 className="block text-sm font-semibold leading-6 text-accent-content"
               >
-                Last name
+                Họ
               </label>
               <div className="mt-2.5">
                 <input
@@ -52,7 +52,7 @@ const Contact = () => {
                 htmlFor="company"
                 className="block text-sm font-semibold leading-6 text-accent-content"
               >
-                Company
+                Công ty
               </label>
               <div className="mt-2.5">
                 <input
@@ -86,7 +86,7 @@ const Contact = () => {
                 htmlFor="phone-number"
                 className="block text-sm font-semibold leading-6 text-accent-content"
               >
-                Phone number
+                Số điện thoại
               </label>
               <div className="relative mt-2.5">
                 <input
@@ -103,7 +103,7 @@ const Contact = () => {
                 htmlFor="message"
                 className="block text-sm font-semibold leading-6 text-accent-content"
               >
-                Message
+                Tin nhắn
               </label>
               <div className="mt-2.5">
                 <textarea
@@ -123,7 +123,7 @@ const Contact = () => {
                   aria-checked="false"
                   aria-labelledby="switch-1-label"
                 >
-                  <span className="sr-only text-accent-content">Agree to policies</span>
+                  <span className="sr-only text-accent-content">Đồng ý chính sách</span>
 
                   <span
                     aria-hidden="true"
@@ -132,9 +132,9 @@ const Contact = () => {
                 </button>
               </div>
               <label className="text-sm leading-6 text-accent-content" id="switch-1-label">
-                By selecting this, you agree to our
+                Chọn, bạn sẽ đồng ý
                 <a href="#" className="font-semibold text-blue-500">
-                &nbsp;privacy&nbsp;policy
+                &nbsp;chính sách&nbsp;bảo mật
                 </a>
                 .
               </label>
@@ -145,7 +145,7 @@ const Contact = () => {
               type="submit"
               className="block w-full rounded-md bg-blue-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
-              Let's talk
+              Đối thoại
             </button>
           </div>
         </Form>

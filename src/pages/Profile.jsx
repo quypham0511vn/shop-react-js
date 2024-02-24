@@ -42,7 +42,7 @@ const Profile = () => {
     if (loginState) {
       getUserData();
     } else {
-      toast.error("You must be logged in to access this page");
+      toast.error("Bạn phải đăng nhập để truy cập trang này");
       navigate("/");
     }
   }, []);
@@ -74,12 +74,12 @@ const Profile = () => {
 
   return (
     <>
-      <SectionTitle title="User Profile" path="Home | User Profile" />
+      <SectionTitle title="Thông tin cá nhân" path="Trang chủ | Thông tin cá nhân" />
       <form className="max-w-7xl mx-auto text-center px-10" onSubmit={updateProfile}>
         <div className="grid grid-cols-3 max-lg:grid-cols-1">
           <div className="form-control w-full lg:max-w-xs">
             <label className="label">
-              <span className="label-text">Your Name</span>
+              <span className="label-text">Tên</span>
             </label>
             <input
               type="text"
@@ -92,7 +92,7 @@ const Profile = () => {
 
           <div className="form-control w-full lg:max-w-xs">
             <label className="label">
-              <span className="label-text">Your Lastname</span>
+              <span className="label-text">Họ</span>
             </label>
             <input
               type="text"
@@ -105,7 +105,7 @@ const Profile = () => {
 
           <div className="form-control w-full lg:max-w-xs">
             <label className="label">
-              <span className="label-text">Your Email</span>
+              <span className="label-text">Email</span>
             </label>
             <input
               type="email"
@@ -118,7 +118,7 @@ const Profile = () => {
 
           <div className="form-control w-full lg:max-w-xs">
             <label className="label">
-              <span className="label-text">Your Phone</span>
+              <span className="label-text">Số điện thoại</span>
             </label>
             <input
               type="tel"
@@ -131,7 +131,7 @@ const Profile = () => {
 
           <div className="form-control w-full lg:max-w-xs">
             <label className="label">
-              <span className="label-text">Your Adress</span>
+              <span className="label-text">Địa chỉ</span>
             </label>
             <input
               type="text"
@@ -144,7 +144,7 @@ const Profile = () => {
 
           <div className="form-control w-full lg:max-w-xs">
             <label className="label">
-              <span className="label-text">Your Password</span>
+              <span className="label-text">Mật khẩu</span>
             </label>
             <input
               type="password"
@@ -159,7 +159,7 @@ const Profile = () => {
           className="btn btn-lg bg-blue-600 hover:bg-blue-500 text-white mt-10"
           type="submit"
         >
-          Update Profile
+          Cập nhật thông tin
         </button>
       </form>
     </>

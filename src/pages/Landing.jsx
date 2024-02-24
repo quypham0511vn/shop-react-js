@@ -6,7 +6,7 @@ import axios from "axios";
 
 export const landingLoader = async () => {
   const response = await axios(
-    `http://localhost:8080/products?_page=1&_limit=8`
+    `http://localhost:8080/products?_page=1&_limit=24`
   );
   const data = response.data;
 
@@ -24,7 +24,7 @@ const Landing = () => {
 
       <div className="selected-products">
         <h2 className="text-6xl text-center my-12 max-md:text-4xl text-accent-content">
-          Trending Products
+          Sản phẩm bán chạy
         </h2>
         <div className="selected-products-grid max-w-7xl mx-auto">
           {products.map((product) => (

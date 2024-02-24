@@ -117,7 +117,7 @@ const SingleProduct = () => {
 
   return (
     <>
-      <SectionTitle title="Product page" path="Home | Shop | Product page" />
+      <SectionTitle title="Sản phẩm" path="Trang chủ | Cửa hàng | Sản phẩm" />
       <div className="grid grid-cols-2 max-w-7xl mx-auto mt-5 max-lg:grid-cols-1 max-lg:mx-5">
         <div className="product-images flex flex-col justify-center max-lg:justify-start">
           <img
@@ -158,7 +158,7 @@ const SingleProduct = () => {
           <div>
             <label htmlFor="Quantity" className="sr-only">
               {" "}
-              Quantity{" "}
+              Số lượng{" "}
             </label>
 
             <div className="flex items-center gap-1">
@@ -179,7 +179,7 @@ const SingleProduct = () => {
               }}
             >
               <FaCartShopping className="text-xl mr-1" />
-              Add to cart
+              Thêm vào giỏ hàng
             </button>
 
             {product?.isInWishList ? (
@@ -196,7 +196,7 @@ const SingleProduct = () => {
                 }}
               >
                 <FaHeart className="text-xl mr-1" />
-                Remove from wishlist
+                Xóa khỏi giỏ
               </button>
             ) : (
               <button
@@ -212,16 +212,16 @@ const SingleProduct = () => {
                 }}
               >
                 <FaHeart className="text-xl mr-1" />
-                Add to wishlist
+                Thêm vào giỏ
               </button>
             )}
           </div>
           <div className="other-product-info flex flex-col gap-x-2">
             <div className="badge bg-gray-700 badge-lg font-bold text-white p-5 mt-2">
-              Brand: {productData?.brandName}
+              Thương hiệu: {productData?.brandName}
             </div>
             <div className="badge bg-gray-700 badge-lg font-bold text-white p-5 mt-2">
-              Gender: {productData?.gender}
+              Giới tính: {productData?.gender}
             </div>
             <div
               className={
@@ -230,16 +230,16 @@ const SingleProduct = () => {
                   : "badge bg-gray-700 badge-lg font-bold text-white p-5 mt-2"
               }
             >
-              In Stock: {productData?.isInStock ? "Yes" : "No"}
+             Trong kho: {productData?.isInStock ? "Có" : "Không"}
             </div>
             <div className="badge bg-gray-700 badge-lg font-bold text-white p-5 mt-2">
               SKU: {productData?.productCode}
             </div>
             <div className="badge bg-gray-700 badge-lg font-bold text-white p-5 mt-2">
-              Category: {productData?.category}
+              Danh mục: {productData?.category}
             </div>
             <div className="badge bg-gray-700 badge-lg font-bold text-white p-5 mt-2">
-              Production Date:{" "}
+              Ngày sản xuất:{" "}
               {productData?.productionDate?.substring(0, 10)}
             </div>
           </div>

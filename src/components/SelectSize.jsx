@@ -9,7 +9,7 @@ const SelectSize = ({ sizeList, size, setSize }) => {
         setSize(newSize);
       }}>
         <option disabled className="text-lg">
-          Pick your size
+          Chọn cỡ
         </option>
         {sizeList.map((item, index) => (
           <option value={item} key={index} className="text-xl">

@@ -69,14 +69,14 @@ const Filters = () => {
       {/* SEARCH */}
       <FormInput
         type="search"
-        label="search product"
+        label="Tìm sản phẩm"
         name="search"
         size="input-sm"
         defaultValue=""
       />
       {/* CATEGORIES */}
       <FormSelect
-        label="select category"
+        label="Chọn mục"
         name="category"
         list={selectCategoryList}
         size="select-sm"
@@ -84,7 +84,7 @@ const Filters = () => {
       />
       {/* COMPANIES */}
       <FormSelect
-        label="select brand"
+        label="Chọn thương hiệu"
         name="brand"
         list={selectBrandList}
         size="select-sm"
@@ -92,7 +92,7 @@ const Filters = () => {
       />
       {/* ORDER */}
       <FormSelect
-        label="sort by"
+        label="Xếp theo"
         name="order"
         list={["asc", "desc", "price high", "price low"]}
         size="select-sm"
@@ -100,7 +100,7 @@ const Filters = () => {
       />
       {/* Producer */}
       <FormSelect
-        label="Select gender"
+        label="Chọn giới tính"
         name="gender"
         list={["all", "male", "female"]}
         size="select-sm"
@@ -109,16 +109,16 @@ const Filters = () => {
       {/* PRICE */}
       <FormRange
         name="price"
-        label="select price"
+        label="Chọn giá"
         size="range-sm"
         price={300}
       />
       {/* Date Picker */}
-      <FormDatePicker label="select minimum production date" name="date" />
+      <FormDatePicker label="Ngày sản xuất nhỏ nhất" name="date" />
 
       {/* In stock */}
       <FormCheckbox
-        label="Only products in stock"
+        label="Sản phẩm còn trong kho"
         name="stock"
         defaultValue="false"
       />
@@ -129,10 +129,10 @@ const Filters = () => {
         type="submit"
         className="btn bg-blue-600 hover:bg-blue-500 text-white btn-sm"
       >
-        search
+        Tìm kiếm 
       </button>
       <Link to="/shop?page=1" className="btn btn-primary btn-sm">
-        reset
+        Đặt lại
       </Link>
     </Form>
   );

@@ -31,12 +31,12 @@ const ThankYou = () => {
     saveToOrderHistory();
     store.dispatch(clearCart());
     store.dispatch(calculateTotals());
-    toast.success("Order completed");
+    toast.success("Hoàn tất bỏ giỏ");
   }
 
   useEffect(() => {
     if (!loginState) {
-      toast.error("You must be logged in to access this page");
+      toast.error("Bạn phải đăng nhập để truy cập trang này");
       navigate("/");
     }
   }, []);
@@ -44,36 +44,35 @@ const ThankYou = () => {
 
   return (
     <>
-      <SectionTitle title="Thank You" path="Home | Cart | Thank you" />
+      <SectionTitle title="Cám ơn" path="Trang chủ | Giỏ hàng | Cám ơn" />
       <div className="thankyou-content text-center text-accent-content px-10 max-w-7xl mx-auto">
         <h2 className="text-6xl max-sm:text-4xl">
-          Thank you for your purchase!
+          Cảm ơn vì đã mua hàng!
         </h2>
 
         <h3 className="text-2xl mt-10 max-sm:text-xl">
-          We hope you love your new clothes and shoes! We appreciate your
-          business and look forward to seeing you again soon.
+          Chúng tôi hi vọng bạn sẽ thích sản phẩm này.
         </h3>
         <h3 className="text-2xl mt-5 max-sm:text-xl">
-          Here are some things you can do next:
+          Có vài bước bạn cần làm tiếp theo:
         </h3>
         <ul className="text-xl mt-5 text-blue-500 max-sm:text-lg">
           <li className="hover:text-blue-600 cursor-pointer">
-            <Link to="/order-history">&rarr; See order history &larr;</Link>
+            <Link to="/order-history">&rarr; Xem lịch sử &larr;</Link>
           </li>
           <li className="hover:text-blue-600 cursor-pointer">
-            <Link to="/">&rarr; Browse more product and buy more &larr;</Link>
+            <Link to="/">&rarr; Duyệt và mua thêm &larr;</Link>
           </li>
           <li className="hover:text-blue-600 cursor-pointer">
-            &rarr; Follow us on social media &larr;
+            &rarr; Theo dõi cửa hàng &larr;
           </li>
         </ul>
 
         <h4 className="text-xl mt-5 max-sm:text-lg">
-          Thank you again for your purchase!
+          Cám ơn đã mua hàng!
         </h4>
         <h4 className="text-xl max-sm:text-lg">
-          Sincerely, Tinh dau Sao Huong team
+          Trân trọng, Tinh dau Sao Huong
         </h4>
       </div>
     </>

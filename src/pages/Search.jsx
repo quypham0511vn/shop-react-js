@@ -37,7 +37,7 @@ const Search = () => {
 
   return (
     <>
-      <SectionTitle title="Search" path="Home | Search" />
+      <SectionTitle title="Tìm kiếm" path="Trang chủ | Tìm kiếm" />
       
       <form
         className="form-control max-w-7xl mx-auto py-10 px-10"
